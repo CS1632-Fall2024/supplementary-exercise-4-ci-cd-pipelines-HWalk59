@@ -57,9 +57,9 @@ jobs:
     needs: [maven_test]  # Enforces that maven_test runs first
 
     runs-on: ubuntu-latest
-    
+
     permissions:
-      contents: read
+      contents: write
 
     steps:
     - name: Restore cached build
